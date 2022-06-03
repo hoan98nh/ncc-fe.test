@@ -6,26 +6,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>index</title>
 	<link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">  
+    </script> 
 </head>
 
 <body>
     <div class="content">
         <div class="left-col">
             <div class="nav">
-                <div class="item">Home</div>
-                <div class="item">Services</div>
-                <div class="item">News</div>
-                <div class="item">Blogs</div>
-                <div class="item">Contact</div>
+                <div>
+                    <a href="index.html"><div class="item active">Home</div></a>
+                </div>
+                <div>
+                    <a href="#"><div class="item">Services</div></a>
+                </div>
+                <div>
+                    <a href="#"><div class="item">News</div></a>
+                </div>
+                <div>
+                    <a href="#"><div class="item">Blogs</div></a>
+                </div>
+                <div>
+                    <a href="#"><div class="item">Contact</div></a>
+                </div>
             </div>
         </div>
         <div class="right-col">
-            <div class="content">
-                <div>
+            <div class="main-content">
+                <div class="logo">
                     <img src="image/logoNCC 1.png" alt="">
                 </div>
                 <div class="text-box-main">
-                    <div>
+                    <div class="title">
                         <p>Lorem ipsum dolor sit asmet?</p>
                     </div>
                     <div>
@@ -42,12 +54,36 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.
                         </div>
                     </div>
+                    <div class="item">
+                        <div class="title">Lorem ipsum dolor sit amet</div>
+                        <div>
+                            <div class="floated">
+                                <img src="image/html-icon 1.png" alt="">
+                            </div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="title">Lorem ipsum dolor sit amet</div>
+                        <div>
+                            <div class="floated">
+                                <img src="image/url-icon 1.png" alt="">
+                            </div>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non dui sodales, faucibus libero ut, posuere felis. Donec imperdiet suscipit accumsan. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices liquam egestas nunc at ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam porta massa in metus bibendum congue. Pellentesque ultrices vestibulum mattis.
+                        </div>
+                    </div>
                 </div>
-                <div class="copyright">Copyright © 2021</div>
             </div>
+            <div class="copyright">Copyright © 2021</div>
         </div>
     </div>
 
+    <script>    
+        $('.nav .item').click(function(){ 
+            $('.nav .item').not(this).removeClass("active"); 
+            $(this).toggleClass("active"); 
+        });
+    </script>
 </body>
 
 </html>
